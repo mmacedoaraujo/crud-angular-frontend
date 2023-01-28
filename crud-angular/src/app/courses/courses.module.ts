@@ -5,6 +5,8 @@ import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     CommonModule,
     CoursesRoutingModule,
     AppMaterialModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatDialogModule
   ]
 })
 export class CoursesModule { }
