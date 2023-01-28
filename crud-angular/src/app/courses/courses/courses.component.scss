@@ -3,3 +3,11 @@ mat-card {
     margin: 2em auto;
     width: 90%;
 }
+
+.loading-spinner {
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.007);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
