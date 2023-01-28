@@ -5,7 +5,8 @@ import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatDialogModule } from '@angular/material/dialog';
+import { SharedModule } from '../shared/shared.module';
+
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     CoursesRoutingModule,
     AppMaterialModule,
     MatProgressSpinnerModule,
-    MatDialogModule
+    SharedModule
   ]
 })
 export class CoursesModule { }
