@@ -32,7 +32,7 @@
       <!-- Action Column -->
       <ng-container matColumnDef="actions">
         <mat-header-cell *matHeaderCellDef="">
-          <button mat-mini-fab color="accent" aria-label="Add a course">
+          <button mat-mini-fab (click)="onAdd()" color="accent" aria-label="Add a course">
             <mat-icon>add</mat-icon>
           </button>
         </mat-header-cell>
