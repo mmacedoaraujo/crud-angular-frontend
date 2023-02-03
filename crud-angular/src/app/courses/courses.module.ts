@@ -7,6 +7,7 @@ import { AppMaterialModule } from '../shared/app-material/app-material.module';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { SharedModule } from '../shared/shared.module';
 import { CourseFormComponent } from './course-form/course-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -20,7 +21,8 @@ import { CourseFormComponent } from './course-form/course-form.component';
     CoursesRoutingModule,
     AppMaterialModule,
     MatProgressSpinnerModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ]
 })
 export class CoursesModule { }
