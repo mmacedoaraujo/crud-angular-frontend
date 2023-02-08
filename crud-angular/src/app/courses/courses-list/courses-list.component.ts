@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Course } from '../model/course';
 
@@ -9,8 +9,8 @@ import { Course } from '../model/course';
 })
 export class CoursesListComponent {
 
-  courses: Course[] = [];
-  displayedColumns = ['ID', 'name', 'category', 'actions'];
+  @Input() courses: Course[] = [];
+  readonly displayedColumns = ['ID', 'name', 'category', 'actions'];
 
   constructor(private router: Router, private route: ActivatedRoute) {
 
