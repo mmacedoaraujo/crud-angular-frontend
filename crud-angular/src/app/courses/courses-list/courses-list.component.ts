@@ -10,7 +10,7 @@ import { Course } from '../model/course';
 export class CoursesListComponent {
 
   @Input() courses: Course[] = [];
-  readonly displayedColumns = ['ID', 'name', 'category', 'actions'];
+  readonly displayedColumns = ['name', 'category', 'actions'];
 
   constructor(private router: Router, private route: ActivatedRoute) {
 
